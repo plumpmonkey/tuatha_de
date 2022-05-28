@@ -19,7 +19,7 @@ if __name__ == '__main__':
     parser.add_argument("-image", help="The container image file report to use - This will also be the data name used when plotting and the file name for the output, e.g. 'rabbitmq_3_9_13' \n", required = True)
     parser.add_argument("-container", help="The container / application name to use - This will be the central node name used when plotting, e.g. 'rabbitmq' \n")
     parser.add_argument("-update", type=bool, help="Will use the BOROVO plugin to fix impacted binaries (where possible) \n")
-    parser.add_argument("-refresh", type=bool, help="Will re-create the node and egdes from the container scan results avaliable - By default visulisations are created from existing node and edge files (when / where they exist) \n", default=False)
+    parser.add_argument("-refresh", type=bool, help="Will re-create the node and egdes from the container scan results avialable - By default visulisations are created from existing node and edge files (when / where they exist) \n", default=False)
     parser.add_argument("-vis", help="Select the visualisation output\nSingle (node), Multi (node) or Both\nThis defaults to 'both' for all scanners and single for a selected format", default="both")
     parser.add_argument("-nofix", help="Select to show CVEs which have been listed as won't / no fix. Accepted values are:\nShow\nNone\nCompare\ndefaults to 'None'", default="None")
 
